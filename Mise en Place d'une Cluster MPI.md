@@ -186,10 +186,11 @@ cd mpicloud
 ```
 2. créer le fichier cpi.c 
 ```
-nano cpi.c ```
-3. coller le code suivant :
+nano cpi.c
 ```
-#include "mpi.h"
+3. coller le code suivant :
+
+```#include "mpi.h"
 #include <stdio.h>
 #include <math.h>
 
@@ -208,7 +209,6 @@ int main(int argc, char *argv[])
     double startwtime = 0.0, endwtime;
     int namelen;
     char processor_name[MPI_MAX_PROCESSOR_NAME];
-
     MPI_Init(&argc, &argv);
     MPI_Comm_size(MPI_COMM_WORLD, &numprocs);
     MPI_Comm_rank(MPI_COMM_WORLD, &myid);
