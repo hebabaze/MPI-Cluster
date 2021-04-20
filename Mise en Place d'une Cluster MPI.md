@@ -165,3 +165,10 @@ $ df -h
 ```
 ![image](https://user-images.githubusercontent.com/54450458/115460348-74fc1080-a228-11eb-8fad-340c9a1345a5.png)
 
+5. Rendre le montage permanant :
+dans le fichier `/etc/fstab ` on ajoute la ligne suivante : `cloud:/home/mpuser/mpicloud /home/mpuser/mpicloud nfs `
+ -Vérification 
+ ![image](https://user-images.githubusercontent.com/54450458/115460940-28fd9b80-a229-11eb-86a5-6fc4c9f7ac5f.png)
+
+
+
