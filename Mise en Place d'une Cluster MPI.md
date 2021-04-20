@@ -141,3 +141,7 @@ Dans notre cas on vas utiliser deux machines virtuels  sous VMware Workstation
 ```
  $ exportfs -a
 ```
+5. Redémarrer le service NFS :
+```
+$ sudo service nfs-kernel-server restart
+```
