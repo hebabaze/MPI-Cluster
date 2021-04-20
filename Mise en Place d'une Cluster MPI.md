@@ -148,5 +148,6 @@ $ sudo service nfs-kernel-server restart
 #### sur la Machine client
 1. installer le package nfs-common
 
-```$ sudo apt-get install nfs-common```
+```$ sudo apt-get install nfs-common
+```
 
