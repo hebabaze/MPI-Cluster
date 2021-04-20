@@ -272,6 +272,7 @@ print(" I'm Proccess with ID : {} executed From Computer : {} Total Process : {}
  ```
 - pour excuter le code : 
 ``` 
+   mpirun -np 2 -H cloud,client python3 -m mpi4py pfe.py
 
 ```
 
