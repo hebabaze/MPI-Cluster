@@ -29,7 +29,8 @@ Dans notre cas on vas utiliser deux machines virtuels  sous VMware Workstation
 
    - vérification des paramètres de "network adapter " dans les "setting" de VMWare les deux machine doit avoir les même "network Connection" types .
 
-     iiiiiiiiiiiiiiiiiiiiiiiiiimg 0
+    ![0](https://user-images.githubusercontent.com/54450458/115442599-7cb0ba80-a212-11eb-99c4-94378e7a7c81.png)
+
 
  3. **Création d'utilisateur :**
 
@@ -92,13 +93,15 @@ Dans notre cas on vas utiliser deux machines virtuels  sous VMware Workstation
 
   - tapez entrée pour laisser les paramètres par défaut
 
-  ssh0
+ ![ssh0](https://user-images.githubusercontent.com/54450458/115442636-876b4f80-a212-11eb-859f-1391c166d9e4.png)
+
 
   ```shell
   $ ssh-copy-id 192.168.1.106
   ```
 
-  ssh1
+  ![ssh1](https://user-images.githubusercontent.com/54450458/115442659-8d613080-a212-11eb-963d-87211d4f9b61.png)
+
 
  ```shell
  $ eval  ssh-agent
@@ -108,7 +111,8 @@ Dans notre cas on vas utiliser deux machines virtuels  sous VMware Workstation
   $ ssh-add ~/.ssh/id_dsa
   ```
 
-ssh3
+![ssh3](https://user-images.githubusercontent.com/54450458/115442696-981bc580-a212-11eb-82d0-d7b4b7bd6d17.PNG)
+
 
 - Sur la machine **client** générer les clés et les copier vers cloud (IP_Cloud dans mon cas : 192.168.1.107 :
 
