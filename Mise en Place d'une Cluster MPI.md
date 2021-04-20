@@ -129,8 +129,10 @@ Dans notre cas on vas utiliser deux machines virtuels  sous VMware Workstation
     ```
 3. Exporter le répertoire mpicloud en ajoutant cette ligne dans le fichier `/etc/exports`
 
-``` sudo nano /etc/exports ```
-et ajouter la ligne suivante `/home/mpuser/mpicloud *(rw,sync,no_root_squash,no_subtree_check)`
+```$ sudo nano /etc/exports ```
+
+   Et ajouter la ligne suivante `/home/mpuser/mpicloud *(rw,sync,no_root_squash,no_subtree_check)`
+
 - verfication de la tache :
 
 ![image](https://user-images.githubusercontent.com/54450458/115458798-7e847900-a226-11eb-929c-06e0cf7721d3.png)
