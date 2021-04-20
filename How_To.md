@@ -95,7 +95,7 @@ Dans notre cas on vas utiliser deux machines virtuels  sous VMware Workstation
   - tapez entrée pour laisser les paramètres par défaut
  ![generate Key](https://user-images.githubusercontent.com/54450458/115446977-3cecd180-a218-11eb-81c6-76b3dcb951e0.PNG)
 
- - copier la clé publique vers la machine **cloud ** (IP_Cloud dans mon cas : 192.168.1.108)
+ - copier la clé publique vers la machine **cloud** (IP_Cloud dans mon cas : 192.168.1.108)
 
   ```shell
   $ cat ~/.ssh/id_rsa.pub | ssh mpuser@192.168.1.108 "mkdir -p ~/.ssh && chmod 700 ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys"
@@ -109,7 +109,7 @@ Dans notre cas on vas utiliser deux machines virtuels  sous VMware Workstation
 
 
 
-- Sur la machine **cloud** générer les clés et les copier vers cloud (IP_Client dans mon cas : 192.168.1.109 :
+- Sur la machine **cloud** générer les clés et les copier vers client (IP_Client dans mon cas : 192.168.1.109 :
 
   répéter presque les même étapes précédentes 
 
