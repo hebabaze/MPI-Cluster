@@ -119,6 +119,19 @@ Dans notre cas on vas utiliser deux machines virtuels  sous VMware Workstation
   ```
 ### Étape 2 : Installation de NFS
 #### sur la Machine cloud
+1. Installer NFS server
   ```shell
   $ sudo apt-get install nfs-kernel-server
   ```
+2. créer un répertoire de Travail qui sera partager à travers le réseau et contiendra les script MPI 
+    ```shell
+   $ mkdir mpicloud
+    ```
+3. Exporter le répertoire mpicloud en ajoutant cette ligne dans le fichier `/etc/exports`
+``` sudo nano /etc/exports ```
+et ajouter la ligne suivante `/home/mpuser/mpicloud *(rw,sync,no_root_squash,no_subtree_check)`
+- verfication de la tache :
+![exporte](https://user-images.githubusercontent.com/54450458/115458380-eedeca80-a225-11eb-8fac-79647de4c930.png)
+4. appliquer  la dernière modification 
+```$ exportfs -a
+```
