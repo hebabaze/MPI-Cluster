@@ -85,25 +85,24 @@ Dans notre cas on vas utiliser deux machines virtuels  sous VMware Workstation
       ```shell
       $ sudo ufw allow ssh
       ```
-5. **configuration de ssh sécurité :**
+5. **configuration de ssh sécurité :** configurer la connexion SSH sans mot de passe
 
-- Sur la machine **cloud** générer les clés et les copier vers client  (IP_Client dans mon cas : 192.168.1.106)
+- Sur la machine **client** générer les clés RSA 
 
   ```shell
-  $ ssh-keygen -t dsa
+  $ ssh-keygen -t rsa
   ```
-
   - tapez entrée pour laisser les paramètres par défaut
+ ![generate Key](https://user-images.githubusercontent.com/54450458/115446977-3cecd180-a218-11eb-81c6-76b3dcb951e0.PNG)
 
- ![ssh0](https://user-images.githubusercontent.com/54450458/115442636-876b4f80-a212-11eb-859f-1391c166d9e4.png)
-
+ - copier la clé publique vers la machine **cloud ** (IP_Cloud dans mon cas : 192.168.1.108)
 
   ```shell
   $ ssh-copy-id 192.168.1.106
   ```
+![copy key](https://user-images.githubusercontent.com/54450458/115446987-40805880-a218-11eb-9ca6-2eddc963a1b0.PNG)
 
-  ![ssh1](https://user-images.githubusercontent.com/54450458/115442659-8d613080-a212-11eb-963d-87211d4f9b61.png)
-
+ - **N.B** vous pouvez utilser les noms de les machine au lieu de ces adresses à condition les rensignés déja dans le fichie `/etc/hosts` de chaque machine
 
  ```shell
  $ eval  ssh-agent
