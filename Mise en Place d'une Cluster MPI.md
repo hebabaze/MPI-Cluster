@@ -13,13 +13,13 @@ Dans notre cas on vas utiliser deux machines virtuels  sous VMware Workstation
    La commande utilisée pour modifier  :
 
     ``` shell
- $ sudo nano /etc/hostname ```
+    $ sudo nano /etc/hostname 
     ```
 
    Pour la vérification après le redémarrage :
 
    ``` shell
- $ hostname
+   $ hostname
    ```
 
    2 **Vérification de la connectivité entre les deux Machine :**
@@ -39,7 +39,7 @@ Dans notre cas on vas utiliser deux machines virtuels  sous VMware Workstation
       sur  **cloud** :
    
       ``` shell
-   $ sudo adduser mpuser
+      $ sudo adduser mpuser
       ```
       
       
@@ -47,7 +47,7 @@ Dans notre cas on vas utiliser deux machines virtuels  sous VMware Workstation
      ``` shell
       $ sudo adduser mpuser
      ```
-  ```
+ 
    4. **Installation de ssh :**
 
       - La communication entre les deux machines sera établie via ssh alors pour installer ssh on va suivre les commandes suivantes sur les deux machines **cloud** et **client** :
