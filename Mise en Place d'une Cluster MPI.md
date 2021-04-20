@@ -12,18 +12,75 @@ Dans notre cas on vas utiliser deux machines virtuels  sous VMware Workstation
 
    La commande utilisée pour modifier  :
 
-   `#sudo nano /etc/hostname`
+    ``` shell
+ $ sudo nano /etc/hostname 
+    ```
 
    Pour la vérification après le redémarrage :
 
-   `#hostname` 
+   ``` shell
+ $ hostname
+   ```
 
-   2 vérification de la connectivité entre les deux Machine :
+   2 **Vérification de la connectivité entre les deux Machine :**
 
-   - vérification des adresses IP :soit avec la commande `#ifconfig` ou `#ip a`
+   - vérification des adresses IP :soit avec la commande `# ifconfig` ou `# ip a`
+
    - utilisation de ping 
+
    - vérification des paramètres de "network adapter " dans les "setting" de VMWare les deux machine doit avoir les même "network Connection" types .
-![Capture d’écran 2021-04-20 151506](https://user-images.githubusercontent.com/54450458/115423335-03a76800-a1fe-11eb-9903-b24ee979062a.png)
 
-.
+     ----------- img 0
 
+   3. **Création d'utilisateur :**
+
+      dans les deux machines on va créer un utilisateur avec le même identifiant  avec la commande suivante en assignant un mot de passe après la commande :
+
+      sur  **cloud** :
+   
+      ``` shell
+   $ sudo adduser mpuser
+      ```
+      
+      
+      sur **client** :
+     ``` shell
+      $ sudo adduser mpuser
+     ```
+   4. **Installation de ssh :**
+
+      - La communication entre les deux machines sera établie via ssh alors pour installer ssh on va suivre les commandes suivantes sur les deux machines **cloud** et **client** :
+   
+      ```shell
+      $ sudo apt update
+      $ sudo apt install openssh-server
+      ```
+et taper votre mot de passe et y pour accepter 
+   
+      - vérifier l'état de service ssh par la commande suivante :
+   
+      ```shell
+      $ sudo service ssh status
+      ```
+
+      ​	où 
+   
+      ```shell
+      $ sudo systemctl status ssh
+      ```
+      - si le firewall ubuntu est activé autoriser le ssh par la commande suivante 
+   
+      
+      ```shell
+      $ sudo ufw allow ssh
+      ```
+
+​      
+
+   5. 
+
+
+
+```
+
+```
