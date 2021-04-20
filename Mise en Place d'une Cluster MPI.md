@@ -245,11 +245,12 @@ int main(int argc, char *argv[])
     return 0;
 }
 ```
-4. compiler et exécuter 
+4. Compiler et exécuter 
 ```
 $ mpicc cpi.c -o cpi.sh
 $ mpirun -n 2 -H client,cloud cpi.sh
 ``` 
+![image](https://user-images.githubusercontent.com/54450458/115465107-5dc02180-a22e-11eb-8156-c71146574733.png)
 
 
 
