@@ -243,7 +243,8 @@ int main(int argc, char *argv[])
 
     MPI_Finalize();
     return 0;
-}```
+}
+```
 
 on execute le code suivant pour tester notre cluster 
 
