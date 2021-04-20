@@ -98,32 +98,24 @@ Dans notre cas on vas utiliser deux machines virtuels  sous VMware Workstation
  - copier la clé publique vers la machine **cloud ** (IP_Cloud dans mon cas : 192.168.1.108)
 
   ```shell
-  $ ssh-copy-id 192.168.1.106
+  $ cat ~/.ssh/id_rsa.pub | ssh mpuser@192.168.1.108 "mkdir -p ~/.ssh && chmod 700 ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys"
   ```
 ![copy key](https://user-images.githubusercontent.com/54450458/115446987-40805880-a218-11eb-9ca6-2eddc963a1b0.PNG)
 
  - **N.B** vous pouvez utilser les noms de les machine au lieu de ces adresses à condition les rensignés déja dans le fichie `/etc/hosts` de chaque machine
-
- ```shell
- $ eval  ssh-agent
- ```
-
-  ```shell
-  $ ssh-add ~/.ssh/id_dsa
-  ```
-
-![ssh3](https://user-images.githubusercontent.com/54450458/115442696-981bc580-a212-11eb-82d0-d7b4b7bd6d17.PNG)
+- maintenant on peut accéder au machine cloud sans mot de passe , taper `exit`pour retournerez 
+   ![acces](https://user-images.githubusercontent.com/54450458/115447490-dc11c900-a218-11eb-92f7-47529874b3be.PNG)
 
 
-- Sur la machine **client** générer les clés et les copier vers cloud (IP_Cloud dans mon cas : 192.168.1.107 :
+
+
+- Sur la machine **cloud** générer les clés et les copier vers cloud (IP_Client dans mon cas : 192.168.1.109 :
 
   répéter presque les même étapes précédentes 
 
   ```shell
-  $ ssh-keygen -t dsa
-  $ ssh-copy-id 192.168.1.107
-  $ eval `ssh-agent`
-  $ ssh-add ~/.ssh/id_dsa
-  ```
+  $ ssh-keygen -t rsa
+  $ cat ~/.ssh/id_rsa.pub | ssh mpuser@192.168.1.109 "mkdir -p ~/.ssh && chmod 700 ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys"
+
 
   
