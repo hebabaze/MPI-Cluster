@@ -159,3 +159,9 @@ $ sudo apt-get install nfs-common
 ```
 sudo mount -t nfs cloud:/home/mpuser/mpicloud ~/mpicloud
 ```
+4. Vérification : 
+```
+$ df -h 
+```
+![image](https://user-images.githubusercontent.com/54450458/115460348-74fc1080-a228-11eb-8fad-340c9a1345a5.png)
+
