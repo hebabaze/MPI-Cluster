@@ -157,5 +157,5 @@ $ sudo apt-get install nfs-common
    ```
 3. Creation du point de montage
 ```
-sudo mount -t nfs cloud:/home/mpiuser/mpicloud ~/mpicloud
+sudo mount -t nfs cloud:/home/mpuser/mpicloud ~/mpicloud
 ```
