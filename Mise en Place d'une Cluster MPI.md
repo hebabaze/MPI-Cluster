@@ -117,3 +117,8 @@ Dans notre cas on vas utiliser deux machines virtuels  sous VMware Workstation
   $ ssh-keygen -t rsa
   $ cat ~/.ssh/id_rsa.pub | ssh mpuser@192.168.1.109 "mkdir -p ~/.ssh && chmod 700 ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys"
   ```
+### Étape 2 : Installation de NFS
+#### sur la Machine cloud
+  ```shell
+  $ sudo apt-get install nfs-kernel-server
+  ```
