@@ -167,8 +167,14 @@ $ df -h
 
 5. Rendre le montage permanant :
 dans le fichier `/etc/fstab ` on ajoute la ligne suivante : `cloud:/home/mpuser/mpicloud /home/mpuser/mpicloud nfs `
- -Vérification 
- ![image](https://user-images.githubusercontent.com/54450458/115460940-28fd9b80-a229-11eb-86a5-6fc4c9f7ac5f.png)
 
+ -Vérification 
+ 
+ ![image](https://user-images.githubusercontent.com/54450458/115460940-28fd9b80-a229-11eb-86a5-6fc4c9f7ac5f.png) 
+ - le point de montage s'affiche dans votre desktop 
+
+![image](https://user-images.githubusercontent.com/54450458/115461127-5e09ee00-a229-11eb-9b82-72ddfab7ca26.png)
+
+  
 
 
