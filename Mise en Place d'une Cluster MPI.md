@@ -151,4 +151,11 @@ $ sudo service nfs-kernel-server restart
 ```
 $ sudo apt-get install nfs-common
 ```
-
+2. créer un répertoire de Travail qui sera partager à travers le réseau et contiendra les script MPI 
+    ```shell
+   $ mkdir mpicloud
+   ```
+3. Creation du point de montage
+```
+sudo mount -t nfs cloud:/home/mpiuser/mpicloud ~/mpicloud
+```
