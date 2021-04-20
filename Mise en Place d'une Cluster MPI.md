@@ -8,12 +8,13 @@ Dans notre cas on vas utiliser deux machines virtuels  sous VMware Workstation
 
 1. **Changer le nom des machines**  :
 
-   Pour changer le nom d'une machines on modifier le nom de la machine dans le fichier `/etc/hostname` on va nommer une Machine **cloud** et l'autre **client** .
+   Pour changer le nom d'une machines on modifier le nom de la machine dans les fichiers `/etc/hostname` (le nom de la machine local ) `/etc/hosts` (la machine local et distant) on va nommer une Machine **cloud** et l'autre **client** .
 
    La commande utilisée pour modifier  :
 
     ``` shell
-    $ sudo nano /etc/hostname 
+    $ sudo nano /etc/hostname
+    $ sudo nano/etc/hosts
     ```
 
    Pour la vérification après le redémarrage :
