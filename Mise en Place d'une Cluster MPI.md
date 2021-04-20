@@ -272,8 +272,11 @@ print(" I'm Proccess with ID : {} executed From Computer : {} Total Process : {}
  ```
 - pour excuter le code : 
 ``` 
-   mpirun -np 2 -H cloud,client python3 -m mpi4py pfe.py
+   mpirun -np 2 -H cloud,client python3 -m mpi4py test.py
 
 ```
-
+- on peut aussi utiliser un fcihier qui contiendra les adreeses IP de nos machine 
+ ```
+ mpirun -np 2 -hostfile machines python3 -m mpi4py pfe.py
+ ```
 
