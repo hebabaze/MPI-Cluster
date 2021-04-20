@@ -32,7 +32,7 @@ Dans notre cas on vas utiliser deux machines virtuels  sous VMware Workstation
 
      ----------- img 0
 
-   3. **Création d'utilisateur :**
+   3 **Création d'utilisateur :**
 
       dans les deux machines on va créer un utilisateur avec le même identifiant  avec la commande suivante en assignant un mot de passe après la commande :
 
@@ -48,17 +48,15 @@ Dans notre cas on vas utiliser deux machines virtuels  sous VMware Workstation
       $ sudo adduser mpuser
      ```
  
-   4. **Installation de ssh :**
+   4 **Installation de ssh :**
 
       - La communication entre les deux machines sera établie via ssh alors pour installer ssh on va suivre les commandes suivantes sur les deux machines **cloud** et **client** :
    
       ```shell
       $ sudo apt update
       $ sudo apt install openssh-server
-  ```
-```
-
-      et taper votre mot de passe et y pour accepter 
+      ```
+  et taper votre mot de passe et y pour accepter 
     
       - vérifier l'état de service ssh par la commande suivante :
     
