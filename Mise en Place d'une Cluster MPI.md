@@ -133,7 +133,7 @@ Dans notre cas on vas utiliser deux machines virtuels  sous VMware Workstation
 et ajouter la ligne suivante `/home/mpuser/mpicloud *(rw,sync,no_root_squash,no_subtree_check)`
 - verfication de la tache :
 
-![exporte](https://user-images.githubusercontent.com/54450458/115458380-eedeca80-a225-11eb-8fac-79647de4c930.png)
+![image](https://user-images.githubusercontent.com/54450458/115458798-7e847900-a226-11eb-929c-06e0cf7721d3.png)
 
 4. appliquer  la dernière modification 
 ```
