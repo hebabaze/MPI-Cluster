@@ -23,6 +23,7 @@ Dans notre cas on vas utiliser deux machines virtuels  sous VMware Workstation
    - vérification des adresses IP :soit avec la commande `#ifconfig` ou `#ip a`
    - utilisation de ping 
    - vérification des paramètres de "network adapter " dans les "setting" de VMWare les deux machine doit avoir les même "network Connection" types .
+![Capture d’écran 2021-04-20 151506](https://user-images.githubusercontent.com/54450458/115423335-03a76800-a1fe-11eb-9903-b24ee979062a.png)
 
 .
 
