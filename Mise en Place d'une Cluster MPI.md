@@ -252,7 +252,27 @@ $ mpirun -n 2 -H client,cloud cpi.sh
 ``` 
 ![image](https://user-images.githubusercontent.com/54450458/115465107-5dc02180-a22e-11eb-8156-c71146574733.png)
 
+### Pour utilser Pyhton 
+vous devez installer d'abord les paquets suivants sur les deux machines cloud et client  :
+```
+$ sudo apt install python3-pip
+$ pip3 install mpi4py
+$ pip3 install MPI
+```
+ - Exemple de code d'un programme test.py 
+ ```
+ from mpi4py import MPI
 
+comm=MPI.COMM_WORLD
+rank = comm.rank
+size = comm.size
+name = MPI.Get_processor_name()
+print(" I'm Proccess with ID : {} executed From Computer : {} Total Process : {}  ".format(rank,name,size))
 
+ ```
+- pour excuter le code : 
+``` 
+
+```
 
 
