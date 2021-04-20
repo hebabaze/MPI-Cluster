@@ -168,7 +168,7 @@ $ df -h
 5. Rendre le montage permanant :
 dans le fichier `/etc/fstab ` on ajoute la ligne suivante : 
 
-        `cloud:/home/mpuser/mpicloud /home/mpuser/mpicloud nfs `
+        cloud:/home/mpuser/mpicloud /home/mpuser/mpicloud nfs 
 
  -Vérification 
  
