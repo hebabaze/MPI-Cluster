@@ -28,8 +28,7 @@ Dans notre cas on vas utiliser deux machines virtuels  sous VMware Workstation
    - utilisation de ping 
 
    - vérification des paramètres de "network adapter " dans les "setting" de VMWare les deux machine doit avoir les même "network Connection" types .
-
-    ![0](https://user-images.githubusercontent.com/54450458/115442599-7cb0ba80-a212-11eb-99c4-94378e7a7c81.png)
+![0](https://user-images.githubusercontent.com/54450458/115442808-bf729280-a212-11eb-8bd9-a54865f51581.png)
 
 
  3. **Création d'utilisateur :**
