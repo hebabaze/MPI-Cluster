@@ -245,8 +245,13 @@ int main(int argc, char *argv[])
     return 0;
 }
 ```
+4. compiler et exécuter 
+```
+$ mpicc cpi.c -o cpi.sh
+$ mpirun -n 2 -H client,cloud cpi.sh
+``` 
 
-on execute le code suivant pour tester notre cluster 
+
 
 
 
